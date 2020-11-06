@@ -29,10 +29,10 @@ $amount = $files.count
 #iterate through files getting all the data
 $hashes = foreach ($file in $Files){
     Write-Output (New-Object -TypeName PSCustomObject -Property @{
-        		FilePath 		= $file.FullName		# full path of the file
+        	FilePath 	= $file.FullName	# full path of the file
 		FileDirectory 	= $file.DirectoryName	# only the path of the file
-		FileName 		= $file.Name		# only filename with extension
-		FileCleanName	= $file.BaseName		# only filename without extension
+		FileName 	= $file.Name		# only filename with extension
+		FileCleanName	= $file.BaseName	# only filename without extension
               
 		})
 		
